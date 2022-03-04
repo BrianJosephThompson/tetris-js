@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <title>My Tetris</title>
+    </head>
+    <body>
+
+        <div class="grid">
+            <canvas id="board" class="game-board"></canvas>
+            <div class="right-column">
+                <div>
+                    <h1>TETRIS</h1>
+                    <p>Score: <span id="score">0</span></p>
+                    <p>Lines: <span id="lines">0</span></p>
+                    <p>Level: <span id="level">0</span></p>
+                    <canvas id="next" class="next"></canvas>
+                </div>
+                <button onclick="play()" class="play-button">Play</button>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="constants.js"></script>
+        <script type="text/javascript" src="playfield.js"></script>
+        <script type="text/javascript" src="tetrominos.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="audio.js"></script>
+    </body>
+    <footer class="footer mt-3">
+        <div class="container">
+            <span class="text-muted footer">
+            Tetris © 1985~2020 Tetris Holding.
+            Tetris logos, Tetris theme song and Tetriminos
+            are trademarks of Tetris Holding.
+            The Tetris trade dress is owned by Tetris Holding.
+            Licensed to The Tetris Company. Tetris Game Design by Alexey Pajitnov.
+            Tetris Logo Design by Roger Dean. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+</html>
